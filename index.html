@@ -57,7 +57,7 @@
   <section id="about">
     <h2 data-i18n="nav_about"></h2>
     <p data-i18n="about_text"></p>
-    <a class="btn" id="cv-link" href="docs/CV_Milana_Kergourlay_EN.pdf" target="_blank" data-i18n="download_cv"></a>
+    <a class="btn" id="cv-link" href="CV_Milana_Kergourlay_EN.pdf" target="_blank" data-i18n="download_cv"></a>
   </section>
 
   <section id="projects">
@@ -72,7 +72,7 @@
         <li data-i18n="p1_c"></li>
       </ul>
       <div class="note" data-i18n="fr_warning"></div>
-      <a class="btn" href="docs/dunkerque-report.pdf" target="_blank" data-i18n="read_report"></a>
+      <a class="btn" href="dunkerque-report.pdf" target="_blank" data-i18n="read_report"></a>
     </div>
 
     <div class="card">
@@ -85,7 +85,7 @@
       </ul>
       <div class="tags"><span>Python</span><span>Mechanics</span><span>Energy</span></div>
       <div class="note" data-i18n="fr_warning"></div>
-      <a class="btn" href="docs/tipe-telepherique-brest.pdf" target="_blank" data-i18n="read_doc"></a>
+      <a class="btn" href="tipe-telepherique-brest.pdf" target="_blank" data-i18n="read_doc"></a>
     </div>
   </section>
 
@@ -99,7 +99,7 @@
         <li data-i18n="e1_b"></li>
       </ul>
       <div class="note" data-i18n="fr_warning"></div>
-      <a class="btn" href="docs/internship-report-piriou.pdf" target="_blank" data-i18n="read_report"></a>
+      <a class="btn" href="internship-report-piriou.pdf" target="_blank" data-i18n="read_report"></a>
     </div>
   </section>
 
@@ -121,7 +121,7 @@
       <p>📧 <a href="mailto:milanakerg@gmail.com">milanakerg@gmail.com</a></p>
       <p>📱 <a href="tel:+33768375076">+33 7 68 37 50 25</a></p>
       <p>📍 Toulon, France</p>
-      <p>🔗 <a href="https://github.com/TON-PSEUDO" target="_blank">GitHub</a> ·
+      <p>🔗 <a href="https://github.com/MilanaKergourlay" target="_blank">GitHub</a> ·
          <a href="https://www.linkedin.com/in/TON-PROFIL" target="_blank">LinkedIn</a></p>
     </div>
   </section>
@@ -174,7 +174,7 @@ const T = {
 function setLang(lang) {
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = T[lang][el.dataset.i18n]; });
-  document.getElementById('cv-link').href = 'docs/CV_Milana_Kergourlay_' + lang.toUpperCase() + '.pdf';
+  document.getElementById('cv-link').href = 'CV_Milana_Kergourlay_' + lang.toUpperCase() + '.pdf';
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
   try { localStorage.setItem('lang', lang); } catch (e) {}
